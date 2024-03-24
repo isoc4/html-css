@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(68, 68, 68);
+            padding: 3px 3px 3px 7px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 69px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+
+        article{
+            background-color: lightgray;
+        }
+
+        article > aside{
+            background-color: rgb(146, 146, 146);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        #brasil{
+            border: 2px solid rgb(90, 90, 90);
+        }
+
+        #vct{
+            margin-top: 20px;
+            border: 2px solid rgb(90, 90, 90);
+        }
+
+        #jogos{
+            margin-top: 20px;
+            border: 2px solid rgb(90, 90, 90);
+        }
+
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article id="brasil">
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo nostrum earum cupiditate et magnam voluptatum ullam tempora aut ipsam! A culpa magnam provident eaque sed quod voluptatem error numquam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo nostrum earum cupiditate et magnam voluptatum ullam tempora aut ipsam! A culpa magnam provident eaque sed quod voluptatem error numquam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo nostrum earum cupiditate et magnam voluptatum ullam tempora aut ipsam! A culpa magnam provident eaque sed quod voluptatem error numquam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo nostrum earum cupiditate et magnam voluptatum ullam tempora aut ipsam! A culpa magnam provident eaque sed quod voluptatem error numquam?</p>
+                <aside>
+                    <p>Artigo escrito por Isis Maria</p>
+                </aside>
+            </article>
+            <article id="vct">
+                <h2>Campeão do VCT Americas</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo nostrum earum cupiditate et magnam voluptatum ullam tempora aut ipsam! A culpa magnam provident eaque sed quod voluptatem error numquam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo nostrum earum cupiditate et magnam voluptatum ullam tempora aut ipsam! A culpa magnam provident eaque sed quod voluptatem error numquam?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo nostrum earum cupiditate et magnam voluptatum ullam tempora aut ipsam! A culpa magnam provident eaque sed quod voluptatem error numquam?</p>
+                <aside>
+                    <p>Artigo escrtito por Guanabara</p>
+                </aside>
+            </article>
+            <article id="jogos">
+                <h2>Jogos Favoritos da Comunidade</h2>
+                <h3>Valorant</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum facere explicabo, voluptates quae illo pariatur veritatis modi quos dicta impedit? Aperiam aliquid consectetur ea repudiandae, modi ex facilis voluptatem suscipit.</p>
+                <h3>GTA 6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum facere explicabo, voluptates quae illo pariatur veritatis modi quos dicta impedit? Aperiam aliquid consectetur ea repudiandae, modi ex facilis voluptatem suscipit.</p>
+                <h3>FIFA</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum facere explicabo, voluptates quae illo pariatur veritatis modi quos dicta impedit? Aperiam aliquid consectetur ea repudiandae, modi ex facilis voluptatem suscipit.</p>
+                <aside>
+                    <p>Artigo escrito por Gekko</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pela ISIS</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

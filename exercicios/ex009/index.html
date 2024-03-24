@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <li>Acordar</li>
+        <li>Escovar os Dentes</li>
+        <li>Tomar Café da Manhã</li>
+        <li>Ligar Computador</li>
+        <li>Abrir o Curso em vídeo</li>
+        <li>Abrir o VsCode</li>
+        <li>Abrir o GitHub</li>
+    </ol><!--A tag OL pode ser usada com números romanos e também com letras basta adicionar o elemento TYPE na tag e acrescentar *1,A,a,I,i* e é usado o elemento START para começar a lista com 2,3,4,5,6...(isso para todos os tipos de TYPE tanto as letras quanto para os números romanos)-->
+
+    <!--Pode-se também usar a tag LI sem a tag de fechamento é uma forma simplificada q teve ínicio no HTML5-->
+    <h2>Listas Não Ordenadas</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>PHP</li>
+    </ul><!--Na tag UL o TYPE serve para mudar o marcador (o padrão é a bolinha preta) para *disc,circle e square*-->
+    <h2>Listas Mistas</h2>
+    <h3>Meus Times Favoritos</h3>
+    <ol>
+        <li>Brasil</li>
+        <ol type="I">
+            <li>Atlético Mineiro</li>
+            <li>São Paulo</li>
+            <li>Corinthians</li>
+            <li>Fluminense</li>
+        </ol>
+        <li>Europa</li>
+        <ol type="I" start="5">
+            <li>Real Madrid</li>
+            <li>Tottenham</li>
+            <li>New Castle</li>
+            <li>Girona</li>
+        </ol>
+    </ol>
+    <h3>Meus Jogos Favoritos</h3>
+    <ol>
+        <li>PC</li>
+        <ul type="square">
+            <li>Valorant</li>
+            <li>Stardew Valley</li>
+        </ul>
+        <li>Mobile</li>
+        <ul type="square">
+            <li>My Singing Monsters</li>
+            <li>Toca Life World</li>
+        </ul>
+        <li>Console</li>
+        <ul type="square">
+            <li>EASportsFC</li>
+            <li>Lego</li>
+            <ul type="circle">
+                <li>Super Heroes</li>
+                <li>Batman 3</li>
+            </ul>
+        </ul>
+    </ol>
+    <h2>Listas de Definições</h2>
+    <dl>
+        <dt>Valorant</dt>
+         <dd>Jogo de Fps com Habilidades</dd>
+        <dt>EASportsFC</dt>
+         <dd>Jogo de Futebol</dd>
+    </dl>
+</body>
+</html>
