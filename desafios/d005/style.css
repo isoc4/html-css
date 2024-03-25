@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --color00: #0D0D0D;
+    --color01: #D95252;
+    --color02: #d49696;
+    --color03: #ADD9D1;
+    --color04: #027373;
+    --color05: #03a796;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--color00);
+    text-align: justify;
+}
+
+header{
+    background-color: var(--color01);
+    border: 2px solid white;
+    border-radius: 10px 10px 0px 0px;
+    margin: auto;
+    padding: 15px;
+}
+
+main{
+    background-color: var(--color04);
+    border-radius: 10px 10px 10px 10px;
+    margin: auto;
+    width: 70%;
+}
+
+article{
+    border: 2px solid white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px;
+}
+
+article > h2{
+    background-image: linear-gradient(to left, transparent, 60%, #ADD9D1);
+    padding-left: 10px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+aside{
+    background-color: var(--color03);
+    border-radius: 8px 8px 5px 5px;
+}
+
+div{
+    background-color: var(--color05);
+    border-radius: 8px 8px 0px 0px;
+    padding-left: 8px;
+}
+
+p{
+    font-weight: bold;
+    text-indent: 12px;
+}
+
+li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    padding: 6px;
+}
+
+li > a{
+    color: var(--color01);
+    text-decoration: none;
+}
+
+li >a:hover{
+    background-color: var(--color02);
+    border-radius: 3px;
+}
+
+h1{
+    background-color: var(--color03);
+    border-radius: 10px;
+    font-family: 'Oswald', cursive;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Oswald', cursive;
+}
+
+h3{
+    background-color: #012e2e;
+    font-family: 'Oswald', cursive;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#fotominha{
+    display: block;
+    border-radius: 100%;
+    width: 30%;
+    border: 2px solid black;
+    margin: auto;
+}
+
+#projetos > a{
+    color: var(--color01);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+#projetos > a:hover{
+    background-color: var(--color02);
+    border-radius: 3px;
+}
+
+.imagemprojetos{
+    display: block;
+    margin: auto;
+    width: 70%;
+}
