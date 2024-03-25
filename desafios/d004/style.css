@@ -1,9 +1,35 @@
 @charset "UTF-8";
 
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 h1{
     text-indent: 10px;
     background-color: rgb(182, 91, 26);
     border: 3px solid black;
+}
+
+h2{
+    font-size: 1.7em;
+}
+
+span{
+    font-weight: bold;
+}
+
+span:hover{
+    padding: 3px;
+    background-color: rgb(106, 170, 243);
+    border-radius: 8px;
+    border: 1.5px dashed rgb(0, 0, 0);
+    transition: calc(600ms);
+    color: rgb(205, 222, 243);
+    text-shadow: none;
+}
+
+li{
+    text-shadow: 0.5px 0.5px 0px rgba(0, 0, 0, 0.719);
 }
 
 #carinhas{
