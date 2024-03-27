@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+
+*{
+    margin: 0%;
+    
+}
+
+:root{
+    --color00: #7CCBEB;
+    --color01: #2EA7F2;
+    --color02: #2932D9;
+    --color03: #C4CDFB;
+    --color04: #DD3E57;
+}
+
+body{
+    background-color: var(--color02);
+}
+
+aside{
+    background-color: var(--color03);
+    width: 800px;
+    margin: auto;
+}
+
+header{
+    background-color: var(--color04);
+    text-align: center;
+    padding: 20px;
+}
+
+a{
+    display: block;
+    width: 400px;
+    margin: auto;
+}
