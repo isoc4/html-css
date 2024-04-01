@@ -19,22 +19,27 @@
 }
 
 *{
-    margin: 0%;
+    margin: 0px;
+    padding: 0px;
 }
 
 
 
 
+html, body{
+    min-height: 100vh;
+}
+
 header{
     background-color: #000000;
-    padding: 60px;
+    color: var(--color04);
     text-align: center;
+    padding: 60px;
 }
 
 header > h1{
     font-family: var(--fontehamster);
     font-size: 7em;
-    color: var(--color01);
 }
 
 header > p > a{
@@ -52,14 +57,15 @@ header > p > a:hover{
 header > p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
-    color: var(--color01);
 }
 
 section{
     font-family: var(--fontesriracha);
-    font-size: 2.5em;
     font-weight: bold;
-    padding: 60px 0px 60px 40px;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 40px;
     background-color: var(--color01);
 }
 
@@ -82,6 +88,7 @@ strong > a:hover{
 
 .paragrafo2{
     background-image: url('/desafios/d012/imagem/background001.jpg');
+    background-color: rgb(53, 53, 53);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -89,6 +96,7 @@ strong > a:hover{
 }
 
 .paragrafo5{
+    background-color: rgb(53, 53, 53);
     background-image: url('/desafios/d012/imagem/background002.jpg');
     background-size: cover;
     background-position: center center;
@@ -98,8 +106,10 @@ strong > a:hover{
 
 #paragrafo2{
     background-color: #00000056;
+    width: 500px;
 }
 
 #paragrafo5{
     background-color: #00000056;
+    width: 500px;
 }
