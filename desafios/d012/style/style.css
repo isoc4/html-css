@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@font-face {
+    font-family: 'Hamster';
+    src: url('/desafios/d012/fontes/Hamster.otf') format('opentype');
+}
+
+:root{
+    --color01: #F2F2F2;
+    --color02: #4e0d0d;
+    --color03: #351d15;
+    --color04: #D99873;
+    --color05: #31401A;
+
+    --fontehamster: 'Hamster', Arial, Helvetica, sans-serif;
+    --fontesriracha: 'Sriracha', Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0%;
+}
+
+
+
+
+header{
+    background-color: #000000;
+    padding: 60px;
+    text-align: center;
+}
+
+header > h1{
+    font-family: var(--fontehamster);
+    font-size: 7em;
+    color: var(--color01);
+}
+
+header > p > a{
+    color: var(--color03);
+    text-decoration: none;
+}
+
+header > p > a:hover{
+    background-color: var(--color02);
+    color: var(--color04);
+    padding: 2px;
+    border-radius: 8px;
+}
+
+header > p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: var(--color01);
+}
+
+section{
+    font-family: var(--fontesriracha);
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 60px 0px 60px 40px;
+    background-color: var(--color01);
+}
+
+footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+strong > a{
+    color: var(--color04);
+    text-decoration: none;
+}
+
+strong > a:hover{
+    text-transform: uppercase;
+}
+
+.paragrafo2{
+    background-image: url('/desafios/d012/imagem/background001.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 80px 100px 80px 40px;
+}
+
+.paragrafo5{
+    background-image: url('/desafios/d012/imagem/background002.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 80px 100px 80px 40px;
+}
+
+#paragrafo2{
+    background-color: #00000056;
+}
+
+#paragrafo5{
+    background-color: #00000056;
+}
