@@ -13,9 +13,11 @@
     --color03: #351d15;
     --color04: #D99873;
     --color05: #31401A;
+    --color06: #80380ecb;
 
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fontehamster: 'Hamster', Arial, Helvetica, sans-serif;
-    --fontesriracha: 'Sriracha', Arial, Helvetica, sans-serif;
+    --fontesriracha: 'Sriracha', cursive;
 }
 
 *{
@@ -28,6 +30,7 @@
 
 html, body{
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -39,7 +42,7 @@ header{
 
 header > h1{
     font-family: var(--fontehamster);
-    font-size: 7em;
+    font-size: 10vw;
 }
 
 header > p > a{
@@ -62,11 +65,16 @@ header > p{
 section{
     font-family: var(--fontesriracha);
     font-weight: bold;
+    font-size: 4.4vw;
     line-height: 2em;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 40px;
     background-color: var(--color01);
+}
+
+section > p{
+    padding-bottom: 50px;
 }
 
 footer{
@@ -86,30 +94,44 @@ strong > a:hover{
     text-transform: uppercase;
 }
 
-.paragrafo2{
-    background-image: url('/desafios/d012/imagem/background001.jpg');
-    background-color: rgb(53, 53, 53);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding: 80px 100px 80px 40px;
-}
 
-.paragrafo5{
-    background-color: rgb(53, 53, 53);
-    background-image: url('/desafios/d012/imagem/background002.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    padding: 80px 100px 80px 40px;
-}
+
+
 
 #paragrafo2{
-    background-color: #00000056;
-    width: 500px;
+    background-image: url('../imagem/background001.jpg');
+    background-color: rgb(39, 39, 39);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 100px 80px 40px;
+    box-shadow: inset 10px 10px 10px 0px rgba(0, 0, 0, 0.712);
+    text-shadow: 2px 2px 0px #421d07;
 }
 
 #paragrafo5{
+    background-color: rgb(39, 39, 39);
+    background-image: url('../imagem/background002.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 80px 100px 80px 40px;
+    box-shadow: inset 10px 10px 10px 0px rgba(0, 0, 0, 0.712);
+    text-shadow: 2px 2px 0px #421d07;
+}
+
+#paragrafo2 > p{
     background-color: #00000056;
-    width: 500px;
+    color: var(--color06);
+    min-width: 335px;
+    width: 80%;
+}
+
+#paragrafo5 > p{
+    background-color: #00000056;
+    color: var(--color06);
+    min-width: 335px;
+    width: 80%;
 }
