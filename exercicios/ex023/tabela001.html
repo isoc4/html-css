@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura básica de uma tabela em HTML</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table{
+            width: 500px;
+            height: 300px;
+            border: 6px solid rgb(128, 0, 255);
+            border-collapse: collapse;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        .aceito{
+            background-color: rgb(23, 100, 23);
+        }
+
+        .emvistoria{
+            background-color: rgb(255, 255, 92);
+        }
+
+        .naoaceito{
+            background-color: rgb(206, 47, 47);
+        }
+
+        #linha2{
+            background-color: rgba(94, 94, 94, 0.274);
+        }
+    </style>
+</head>
+<body>
+    <h1>Essa é a minha primeira tabela em HTML</h1>
+    <!--Hierarquia de Tabelas (simples)
+        *TABLE = tabela*
+           TABLE ROW = linha de tabela
+                 TABLE HEADER = cabeçalho de tabela
+                 TABLE DATA = dado de tabela
+
+        *ESSA HIERARQUIA DEVE SER OBEDECIDA*
+    -->
+    <table>
+        <tr><!--PRIMEIRA LINHA DE TABELA-->
+            <td class="aceito">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr id="linha2">
+            <td>A2</td>
+            <td>B2</td>
+            <td class="emvistoria">C2</td>
+        </tr>
+        <tr>
+            <td class="naoaceito">A3</td>
+            <td>B3</td>
+            <td class="aceito">C3</td>
+        </tr>
+    </table>
+    <table>
+    </table>
+</body>
+</html>
