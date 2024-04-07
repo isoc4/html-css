@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            background-color: cadetblue;
+            color: black;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        table{
+            position: relative;
+            margin: auto;
+            width: 70%;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        caption{
+            background-color: rgb(0, 143, 143);
+            border: 3px solid rgb(0, 61, 61);
+            border-radius: 10px;
+            font-size: 2em;
+            font-weight: bold;
+            padding: 1%;
+        }
+
+        thead{
+            background-color: cornflowerblue;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: cornflowerblue;
+        }
+
+        tbody{
+            background-color: lightblue;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgb(59, 97, 99);
+        }
+
+        tfoot{
+            background-color: black;
+            color: azure;
+            border: 2px solid white;
+        }
+
+        tfoot > tr > td{
+            border: 2px solid white;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 1%;
+        }
+
+        .crescimento{
+            text-align: right;
+            color: rgb(0, 255, 0);
+        }
+
+        .decaimento{
+            text-align: right;
+            color: red;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        .none{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas Grandes</h1>
+    <!--
+        HIERARQUIA DAS TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População dos Países</caption>
+        <thead>
+            <th scope="col">País</th>
+            <th scope="col">População</th>
+            <th scope="col">Crescimento ou Decaimento</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>India</td>
+                <td class="num">1 429 921 746</td>
+                <td class="crescimento">+269.108.746</td>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td class="num">1 426 391 281</td>
+                <td class="decaimento">+87.778.313</td>
+            </tr>
+            <tr>
+                <td>Estados Unidos</td>
+                <td class="num">339 987 103</td>
+                <td class="crescimento">+31.241.565</td>
+            </tr>
+            <tr>
+                <td>Indonésia</td>
+                <td class="num">277 184 719	</td>
+                <td class="crescimento">+33.168.546</td>
+            </tr>
+            <tr>
+                <td>Paquistão</td>
+                <td class="num">240 215 932</td>
+                <td class="crescimento">+65.636.932</td>
+            </tr>
+            <tr>
+                <td>Nigéria</td>
+                <td class="num">223 899 057</td>
+                <td class="crescimento">+62.946.204</td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td class="num">203 080 756	</td>
+                <td class="decaimento">+12.348.062</td>
+            </tr>
+            <tr>
+                <td>Bangladesh</td>
+                <td class="num">172 452 382	</td>
+                <td class="crescimento">+10.231.620</td>
+            </tr>
+            <tr>
+                <td>Rússia</td>
+                <td class="num">146 140 931</td>
+                <td class="crescimento">+5.267.284</td>
+            </tr>
+            <tr>
+                <td>México</td>
+                <td class="num">134 127 189</td>
+                <td class="crescimento">+21.594.789</td>
+            </tr>
+            <tr>
+                <td>Etiópia</td>
+                <td class="num">125 092 825</td>
+                <td class="crescimento">+42.268.093</td>
+            </tr>
+            <tr>
+                <td>Japão</td>
+                <td class="num">124 127 899</td>
+                <td class="decaimento">-3.028.326</td>
+            </tr>
+            <tr>
+                <td>Filipinas</td>
+                <td class="num">109 581 078</td>
+                <td class="none">-</td>
+            </tr>
+            <tr>
+                <td>Egito</td>
+                <td class="num">102 334 404</td>
+                <td class="none">-</td>
+            </tr>
+            <tr>
+                <td>Vietname</td>
+                <td class="num">97 338 579</td>
+                <td class="none">-</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de População</th>
+                <td class="num">5 151 875 865</td>
+                <td>Média: 343 458 391</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti similique assumenda ipsam autem, voluptatum et tenetur, labore vero provident expedita consequuntur atque blanditiis voluptates temporibus ut quos. Quia, impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem commodi possimus quia sequi corrupti eligendi nobis. Magnam, dolor officiis dolorem fugiat odit voluptas ipsa laboriosam molestias ut voluptatibus nulla.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti similique assumenda ipsam autem, voluptatum et tenetur, labore vero provident expedita consequuntur atque blanditiis voluptates temporibus ut quos. Quia, impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem commodi possimus quia sequi corrupti eligendi nobis. Magnam, dolor officiis dolorem fugiat odit voluptas ipsa laboriosam molestias ut voluptatibus nulla.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti similique assumenda ipsam autem, voluptatum et tenetur, labore vero provident expedita consequuntur atque blanditiis voluptates temporibus ut quos. Quia, impedit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem commodi possimus quia sequi corrupti eligendi nobis.</p>
+</body>
+</html>

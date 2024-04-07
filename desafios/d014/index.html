@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(33, 44, 53);
+            color: white;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 2px solid black;
+            color: white;
+            padding: 5px;
+            width: 200px;
+        }
+
+        th{
+            background-color: rgb(16, 21, 26);
+            font-size: 3vw;
+        }
+
+        td{
+            font-style: oblique;
+        }
+
+        .num{
+            text-align: center;
+            color: rgb(0, 255, 0);
+        }
+
+        .medias{
+            text-align: left;
+        }
+
+        .medias > td{
+            background-color: rgb(16, 21, 26);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Nota Escolar</h1>
+    <table>
+        <thead>
+            <th rowspan="2">Area</th>
+            <th rowspan="2">Disciplinas</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
+            <tr><th>Nota 1</th><th>Nota 2</th></tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+            </tr>
+            <tr class="medias">
+                <th colspan="4">Média de Exatas</th>
+                <td class="num">25.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+                <td class="num">25.0</td>
+            </tr>
+            <tr class="medias">
+                <th colspan="4">Média de Humanas</th>
+                <td class="num">25.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

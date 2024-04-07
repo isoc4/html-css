@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Pessoas</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            background-color: rgb(70, 70, 70);
+            color: azure;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 2px solid black;
+            padding: 13px;
+        }
+
+        th{
+            color: rgb(177, 144, 106);
+            font-style: italic;
+            font-size: 1.3em;
+        }
+
+        caption{
+            background-color: bisque;
+            color: gray;
+            border: 4px solid rgb(177, 144, 106);
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de Filmes</h1>
+    <table>
+        <caption>Filmes Preferidos</caption>
+        <thead>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nome</th>
+            <th scope="colgroup" colspan="3">Filme</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Anna Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Silva</td>
+                <td>Hulk</td>
+                <td>Harry Potter</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Detona Ralph</td>
+                <td>Matrix</td>
+                <td>Peter Pan</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Daniel Ribeiro</td>
+                <td>Homem de Ferro</td>
+                <td>Toy Story</td>
+                <td>Princesa e o Sapo</td>
+            </tr>
+            <tr>
+                <td>Fabio Souza</td>
+                <td>Star Wars</td>
+                <td>Spider Man</td>
+                <td>Jurasic World</td>
+            </tr>
+            <tr>
+                <td>Benjamin Santos</td>
+                <td>Jurasic Park</td>
+                <td>Shark Boy e Lava Girl</td>
+                <td>Lego </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row" colspan="4">total</th>
+            <td>1000</td>
+        </tfoot>
+    </table>
+</body>
+</html>

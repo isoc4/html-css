@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(46, 60, 71);
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 2px solid white;
+            padding: 10px;
+        }
+
+        col.cnome{
+            background-color: darkgreen;
+        }
+
+        col.cgrupo{
+            background-color: bisque;
+        }
+
+        col.cprofi{
+            background-color: rgb(52, 7, 94);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprofi">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Xuxa Meneguel</td>
+            <td>F</td>
+            <td>50</td>
+            <td>Artista</td>
+        </tr>
+        <tr>
+            <td>Benício Gomes</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Augusto Neves</td>
+            <td>M</td>
+            <td>36</td>
+            <td>Gerente</td>
+        </tr>
+        <tr>
+            <td>Paola Santos</td>
+            <td>F</td>
+            <td>47</td>
+            <td>Engenheira</td>
+        </tr>
+        <tr>
+            <td>Angélica Duarte</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Cristiano Santos</td>
+            <td>M</td>
+            <td>39</td>
+            <td>Melhor do Mundo</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Células</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(65, 55, 55);
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 60%;
+        }
+
+        td{
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela com Células Mescladas</h1>
+    <table>
+        <tr>
+            <td rowspan="3">Uva</td>
+            <td colspan="2">Maçã</td>
+            <!--<td>Pera</td>-->
+        </tr>
+        <tr>
+            <!--<td>Abacaxi</td>-->
+            <td colspan="2">Banana</td>
+            <!--<td>Laranja</td>-->
+        </tr>
+        <tr>
+            <!--<td>Kiwi</td>-->
+            <td>Goiaba</td>
+            <td>Jabuticaba</td>
+        </tr>
+        <tr>
+            <td>Tangerina</td>
+            <td>Maracujá</td>
+            <td>Melancia</td>
+        </tr>
+    </table>
+</body>
+</html>
