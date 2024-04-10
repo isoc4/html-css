@@ -4,17 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframe</title>
+    <style>
+        iframe{
+            border: 3px solid red;
+            width: 300px;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
     <h1>Aprendendo Iframe</h1>
     <p>Acessando o site do 
 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0">
-
+        <!--Tamanho Padrão: 300 x 150-->
+        <iframe scrolling="no" src="https://www.cursoemvideo.com" frameborder="0">
+            <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
         </iframe>
         
     para aprender a programar.
     </p>
-    <p>O site do <iframe src="https://www.google.com.br" frameborder="0"></iframe>também é muito legal!</p>
+    <p>O meu site
+
+        <iframe src="https://isoc4.github.io/site-adidas/" frameborder="0" width="260" height="400">
+            <a href="https://isoc4.github.io/site-adidas/">Adidas</a>
+        </iframe>
+
+     também é muito legal!</p>
 </body>
 </html>
