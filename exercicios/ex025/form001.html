@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+
+        *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        input{
+            border: 2px solid white;
+            border-radius: 30px;
+            background-color: gray;
+            padding: 3px;
+            color: rgb(102, 155, 189);
+        }
+
+        form{
+            background-color: rgb(35, 44, 51);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Primeiro Formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="name" id="inome">
+        </p>
+        <hr>
+        <p><label for="isenha">Senha:</label> 
+            <input type="password" name="senha" id="isenha">
+        </p>
+
+        <p><input type="submit" value="Confirmar"></p>
+    </form>
+</body>
+</html>
