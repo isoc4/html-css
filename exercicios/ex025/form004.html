@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Mais Tipos</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Insira Seus Dados</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required>
+            </p>
+            <p>
+                <label for="itele">Telefone:</label>
+                <input type="tel" name="tele" id="itele" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" placeholder="+xx (xx) xxxx-xxxx">
+            </p>
+        </fieldset>
+        <!--Estudar mais sobre RegEx
+            Isso é uma expressão regular: (required pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$").
+
+            HTML5 Telefone Pattern
+        -->
+        <p>
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

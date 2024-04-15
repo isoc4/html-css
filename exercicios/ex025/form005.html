@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        fieldset{
+            border: 3px solid cadetblue;
+        }
+
+        legend{
+            font-style: italic;
+        }
+
+        strong{
+            font-size: 13px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outro Exemplo</h1>
+    <strong>(*) mostra que é obrigatório</strong>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo<strong>*</strong></legend>
+
+            <input type="radio" name="sex" id="imas" value="M">
+            <label for="imas">Masculino</label>
+            <br>
+            <input type="radio" name="sex" id="ifem" value="F">
+            <label for="ifem">Feminino</label>
+            <br>
+            <input type="radio" name="sex" id="ioutr" checked>
+            <label for="ioutr">Outro</label>
+            <br>
+
+        </fieldset>
+        <!--Todos os botões de radio tem que ter o mesmo "name"-->
+        <fieldset>
+            <legend>Marque de Acordo com sua opnião</legend>
+            <h2>Esporte Favorito<strong>*</strong></h2>
+
+                <input type="checkbox" name="fut" id="ifut">
+                <label for="ifut">Futebol</label>
+                <br>
+                <input type="checkbox" name="vol" id="ivol">
+                <label for="ivol">Vôlei</label>
+                <br>
+                <input type="checkbox" name="bas" id="ibas">
+                <label for="ibas">Basquete</label>
+                <br>
+                <input type="checkbox" name="futa" id="ifuta">
+                <label for="ifuta">Futebol Americano</label>
+            
+            <h2>Comida Favorita<strong>*</strong></h2>
+
+                <input type="checkbox" name="stro" id="istro">
+                <label for="istro">Strogonoff</label>
+                <br>
+                <input type="checkbox" name="las" id="ilas">
+                <label for="ilas">Lasanha</label>
+                <br>
+                <input type="checkbox" name="esc" id="iesc"> 
+                <label for="iesc">Escondidinho</label>
+                <br>
+                
+        </fieldset>
+        <p>
+            <input type="submit" value="Confirmar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
