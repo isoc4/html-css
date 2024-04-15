@@ -14,4 +14,7 @@
     <li><a href="https://isoc4.github.io/html-css/desafios/d008/index.html">Desafio008</a></li>
     <li><a href="https://isoc4.github.io/html-css/desafios/d009/index.html">Desafio009</a></li>
     <li><a href="https://isoc4.github.io/html-css/desafios/d010/index.html">Desafio010</a></li>
+    <li><a href="https://isoc4.github.io/html-css/desafios/d011/index.html">Desafio011</a></li>
+    <li><a href="https://isoc4.github.io/html-css/desafios/d012/index.html">Desafio012</a></li>
+    <li><a href="https://isoc4.github.io/html-css/desafios/d014/index.html">Desafio014</a></li>
 </ul>
