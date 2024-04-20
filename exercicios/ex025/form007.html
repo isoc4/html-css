@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="igame">Jogos:</label>
+            <select name="game" id="igame">
+
+                <optgroup label="Jogos Pc">
+                    <option value="GTA">Grand Theft Auto (GTA)</option>
+                    <option value="EAS">EA Sports FC</option>
+                    <option value="SMS">Super Market Simulator</option>
+                </optgroup>
+
+                <optgroup label="Jogos Mobile">
+                    <option value="FF" selected>Free Fire</option>
+                    <option value="POU">Pou</option>
+                    <option value="AUS">Among Us</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="ifruta">Frutas:</label>
+            <input type="text" name="fruta" id="ifruta" list="lstfruta">
+
+            <datalist id="lstfruta">
+
+                <option>Goiaba</option>
+                <option>Banana</option>
+                <option value="MAÇ">Maçã</option>
+                <option value="UVA">Uva</option>
+
+            </datalist>
+
+        </p>
+
+        <p>
+
+            <label for="imsg">Mensagem:</label>
+            <br>
+            <textarea name="msg" id="imsg" cols="25" rows="8" placeholder="Insira o texto aqui"></textarea>
+
+        </p>
+
+        <p>
+            <input type="submit"
+            value="Confirmar">
+            <input type="reset">
+        </p>
+
+    </form>
+</body>
+</html>
