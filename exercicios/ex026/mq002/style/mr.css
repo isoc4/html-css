@@ -1,3 +1,7 @@
 @charset "UTF-8";
 
 /* Aparelho Modo Retrato (portrait)*/
+
+body{
+    background-color: green;
+}
