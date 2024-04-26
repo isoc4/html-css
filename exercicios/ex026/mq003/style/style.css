@@ -12,6 +12,8 @@ html, body{
     width: 100vw;
     height: 100vh;
     background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 h1{
@@ -22,25 +24,7 @@ h1{
 
 p{
     font-weight: bold;
-    color: lightskyblue;
+    color: lightcoral;
     text-shadow: 4px 4px 2px #6494ed88;
     padding: 1%;
-}
-
-@media screen and (orientation: portrait) {
-
-    body{
-        background: url("../imagem/cev-portrait.jpg") center bottom no-repeat;
-        background-size: contain;
-    }
-    
-}
-
-@media screen and (orientation: landscape) {
-
-    body{
-        background: url("../imagem/cev-landscape.jpg") left bottom no-repeat;
-        background-size: contain;
-    }
-    
 }
