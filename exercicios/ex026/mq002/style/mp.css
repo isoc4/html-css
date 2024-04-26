@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Aparelho modo Paisagem/Deitado (landscape) */
+
+body{
+    background: url("../imagem/cev-landscape.jpg") left bottom no-repeat;
+    background-size: contain;
+}

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Aparelho modo Retrato/Em pé (portrait) */
+
+body{
+    background: url("../imagem/cev-portrait.jpg") center bottom no-repeat;
+    background-size: contain;
+}

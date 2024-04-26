@@ -21,28 +21,3 @@ h1{
     text-shadow: 4px 4px 2px #6494ed88;
     padding: 10px;
 }
-
-/* 
-
-   Aparelho em Modo Retrato (portrait) 
-   Aparelho em Modo Paisagem (landscape)
-
-*/
-
-@media screen and (orientation: portrait) {
-
-    body{
-        background: url("../imagem/cev-portrait.jpg") center bottom no-repeat;
-        background-size: contain;
-    }
-
-}
-
-@media screen and (orientation: landscape) {
-
-    body{
-        background: url("../imagem/cev-landscape.jpg") left bottom no-repeat;
-        background-size: contain;
-    }
-
-}
