@@ -1,3 +1,107 @@
 @charset "UTF-8";
 
 /* Todas as outras Media */
+
+/* Typical Device Brakepoints
+----------------------------
+
+Pequenas Telas: até 600px (max-width: 600px)
+
+Celular: de 600px até 768px (min-width: 600px)
+
+Tablet: de 768px até 992px (min-width: 768px)
+
+PC: de 992px até 1200px (min-width: 992px)
+
+Grandes Telas: de 1200px pra cima (min-width: 1200px)
+
+*/
+
+/* IMPRESSÃO */
+
+@media print{
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url('../imagem/back-print.jpg');/* DESNESCESSÁTRIO (Na impressão não tem como colocar um background.) */
+    }
+
+    main{
+        border: 1px solid black;
+    }
+
+    h1{
+        color: black;
+        text-shadow: none;
+    }
+
+    #phone{ display: none; }
+    #tablet{ display: none; }
+    #print{ display: block; }
+    #pc{ display: none; }
+    #tv{ display: none; }
+    
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    body{
+        background-image: url('../imagem/back-tablet.jpg');
+    }
+
+    h1{
+        color: lightgreen;
+    }
+
+    #phone{ display: none; }
+    #tablet{ display: block; }
+    #print{ display: none; }
+    #pc{ display: none; }
+    #tv{ display: none; }
+    
+}
+
+/* PC */
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+    body{
+        background-image: url('../imagem/back-pc.jpg')
+    }
+
+    h1{
+        color: lightcoral;
+    }
+
+    #phone{ display: none; }
+    #tablet{ display: none; }
+    #print{ display: none; }
+    #pc{ display: block; }
+    #tv{ display: none; }
+    
+}
+
+/* TELAS GRANDES (tv e etc) */
+
+@media screen and (min-width: 1200px){
+
+    body{
+        background-image: url('../imagem/back-tv.jpg')
+    }
+
+    h1{
+        color: lightsalmon;
+    }
+
+    #phone{ display: none; }
+    #tablet{ display: none; }
+    #print{ display: none; }
+    #pc{ display: none; }
+    #tv{ display: block; }
+    
+}
