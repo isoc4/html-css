@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/* VErsão Mobile First */
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    background-color: #87cefa;
+}
+
+header{
+    background-color: #476c83;
+}
+
+header > h1{
+    padding: 10px;
+    text-align: center;
+}
+
+#iconburguer{
+    text-align: center;
+    color: #87cefa;
+    background-color: black;
+    padding: 5px;
+}
+
+#iconburguer:hover{
+    background-color: #70a9cc;
+    color: black;
+    cursor: pointer;
+}
+
+menu{
+    display: none;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu > ul > li > a{
+    display: block;
+    background-color: #2a414e;
+    color: #e7e7c1;
+    padding: 10px;
+    text-decoration: none;
+    border-top: 3px solid #162229;
+}
+
+menu > ul > li > a:hover{
+    color: #b3b396;
+    background-color: #506674;
+}
+
+main{
+    margin: auto;
+    margin-top: 15px;
+    background-color: #b5dffa;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 20px;
+    width: 80vw;
+}
+
+main > article > p{
+    text-indent: 10px;
+    margin-bottom: 20px;
+}
+
+main > article > p > strong{
+    color: #356d5b;
+}
+
+main > article > h2{
+    text-align: center;
+    color: #4cb382;
+}

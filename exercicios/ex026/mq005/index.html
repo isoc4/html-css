@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>Menu Resposivo</h1>
+        <i id="iconburguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="menuburguer">
+            <ul>
+                <li><a href="#">Html</a></li>
+                <li><a href="#">Css</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">React</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Responsividade</h2>
+            <p>A responsividade de um site é uma característica essencial que se refere à capacidade do site de se adaptar e funcionar corretamente em diferentes dispositivos e tamanhos de tela. Isso inclui desktops, laptops, tablets e smartphones.</p>
+
+            <p>Em resumo, a responsividade de um site é fundamental para garantir uma experiência de usuário consistente e de alta qualidade, independentemente do dispositivo utilizado para acessá-lo. Isso não só melhora a satisfação do usuário, mas também pode ter um impacto positivo nas classificações de SEO e no sucesso geral do site.</p>
+
+            <p><strong>Layout Flexível:</strong> Um site responsivo utiliza layouts flexíveis que se ajustam dinamicamente ao tamanho da tela do dispositivo do usuário. Isso garante que o conteúdo seja exibido de forma legível e organizada em qualquer dispositivo. Todos os elementos do site, como imagens, textos, vídeos e menus de navegação, devem se ajustar automaticamente para se encaixar na tela do dispositivo sem distorção ou perda de funcionalidade.</p>
+
+            <p><strong>Navegação Intuitiva:</strong> A navegação em um site responsivo é projetada para ser intuitiva em todas as plataformas. Isso geralmente envolve o uso de menus de navegação simplificados ou "hamburguer" em dispositivos móveis, para facilitar a localização do conteúdo. Um site responsivo é otimizado para carregamento rápido, independentemente do dispositivo utilizado. Isso é crucial para proporcionar uma experiência de usuário positiva, especialmente em dispositivos móveis, onde a velocidade da conexão à internet pode variar.</p>
+        </article>
+    </main>
+    <script>
+
+        function clickMenu(){
+            if (menuburguer.style.display == 'block'){
+                menuburguer.style.display = 'none'
+            } else{
+                menuburguer.style.display = 'block'
+            }
+        }
+
+    </script>
+</body>
+</html>
