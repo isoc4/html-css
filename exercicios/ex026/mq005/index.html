@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Responsivo</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Menu Responsivo</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="style/mq.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Menu Resposivo</h1>
         <i id="iconburguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -33,6 +34,14 @@
         </article>
     </main>
     <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menuburguer.style.display = 'block'
+            } else {
+                menuburguer.style.display = 'none'
+            }
+        }
 
         function clickMenu(){
             if (menuburguer.style.display == 'block'){

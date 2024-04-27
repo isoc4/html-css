@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+#iconburguer{
+    display: none;
+}
+
+menu{
+    display: block;
+}
+
+menu > ul > li > a{
+    border-radius: 20px;
+}
+
+menu > ul > li{
+    display: inline-block;
+    margin: 1%;
+}
+
+main{
+    width: 750px;
+}
