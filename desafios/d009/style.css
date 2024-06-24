@@ -2,58 +2,60 @@
 
 *{
    margin: 0%;
+   box-sizing: border-box;
 }
-
-
-
-
 
 :root{
-    --color00: #7CCBEB;
-    --color01: #2782bb;
-    --color02: #2932D9;
-    --color03: #9babfa;
-    --color04: #5c04ff3f;
+    --color00: #F20505;
+    --color01: #F20C1F;
+    --color02: #F2F2F2;
+    --color03: #494c53;
+    --color04: #262626;
 }
 
+
+
+
+
 body{
-    background-color: var(--color01);
+    background-color: var(--color04);
 }
 
 header{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-variant: small-caps;
     font-size: 2vw;
-    background-color: var(--color02);
-    color: var(--color03);
+    background-color: var(--color00);
+    color: var(--color02);
     text-align: center;
     padding: 20px;
 }
 
 article{
-    padding: 20px;
+    margin: 70px 20px 20px 20px;
 }
 
 aside{
-    max-width: 600px;
-    display: flex;  
-    align-items: center;
+    
 }
 
 img{
-    width: 25vw;
+    float: left;
+    width: 200px;
 }
 
 div{
+    float: right;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 2vh;
-    background-color: var(--color04);
+    color: var(--color02);
+    background-color: var(--color03);
     text-indent: 15px;
     padding: 10px;
     border-radius: 8px;
     text-align: justify;
-    width: 400px;
+    max-width: 400px;
 }
 
 p > em{
@@ -62,15 +64,15 @@ p > em{
 }
 
 strong{
-    color: var(--color03);
+    color: var(--color01);
 }
 
 strong > a{
-    color: var(--color03);
+    color: var(--color01);
 }
 
 strong > a:hover{
-    background-color: var(--color01);
+    background-color: #b90a19;
     border-radius: 5px;
     color: black;
     text-decoration: none;
